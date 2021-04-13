@@ -34,9 +34,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files/Python" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="Python.example01">
+  <component name="RunManager" selected="Python.example03 (1)">
     <configuration name="example01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -58,7 +58,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="example03" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="example03 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,11 +66,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../test/lesson2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson1/example03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../test/lesson2/example03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.example03 (1)" />
         <item itemvalue="Python.example01" />
         <item itemvalue="Python.example06" />
         <item itemvalue="Python.example05" />
         <item itemvalue="Python.example04" />
-        <item itemvalue="Python.example03" />
       </list>
     </recent_temporary>
   </component>
