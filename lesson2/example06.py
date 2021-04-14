@@ -1,0 +1,3 @@
+NameTable = {}
+NameColumn = []
+TypeColumn = []
