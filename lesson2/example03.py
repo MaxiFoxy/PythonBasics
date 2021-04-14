@@ -39,7 +39,7 @@ while True:
             NumMonth = 0
         SeasonsName=int(NumMonth/3)
         SeasonsName = list_seasons[SeasonsName]
-        #месяц/3 и 12 прировнять к 0 обрезаем всё после запятой и получим ключ
+        #месяц/3 и 12 прировнять к 0, обрезаем всё после запятой и получим ключ
         break
     else:
         print("Месяцов всего 12")
