@@ -11,7 +11,7 @@ while True:
     except ValueError:
         print("Введите число например 12 >>> (Декабрь, Зима)")
         continue
-    if NumMonth <= 12:
+    if 1 <= NumMonth <= 12:
         for key in Seasons:
             try:
                 if Seasons[key][Seasons[key].index(NumMonth)]:
@@ -34,9 +34,16 @@ while True:
     except ValueError:
         print("Введите число например 12 >>> (Декабрь, Зима)")
         continue
-    if NumMonth <= 12:
-        #месяц/4 поставить вес чтобы выровнять или 12 прировнять к 0
+    if 1 <= NumMonth <= 12:
+        if NumMonth == 12:
+            NumMonth = 0
+        SeasonsName=int(NumMonth/3)
+        SeasonsName = list_seasons[SeasonsName]
+        #месяц/3 и 12 прировнять к 0 обрезаем всё после запятой и получим ключ
         break
     else:
         print("Месяцов всего 12")
         continue
+if NumMonth == 0:
+    NumMonth = 12
+print("Месяц:", monthname(NumMonth), "\nВремя года:", SeasonsName)
