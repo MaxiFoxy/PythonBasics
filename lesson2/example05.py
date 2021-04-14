@@ -1,4 +1,4 @@
-Rating=[]
+Rating = []
 while True:
     print("Для выхода введите любое значени кроме цифр")
     try:
@@ -8,4 +8,5 @@ while True:
         Rating.reverse()
         print("Пользователь ввел число:", RatingInput, "Результат", Rating)
     except ValueError:
+        print("Итог:", Rating)
         break
