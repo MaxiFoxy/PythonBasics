@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04fe920c-cda1-4c75-8c31-7667e07236a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../test/lesson2/example04.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/lesson2/example03.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/lesson2/example03.py" afterDir="false" />
     </list>
@@ -186,6 +187,17 @@
       <updated>1618214415627</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
