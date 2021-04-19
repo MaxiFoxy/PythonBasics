@@ -1,7 +1,7 @@
 import urllib.request
 import time
 
-site = "google.com"
+site = "https://google.com/"
 t1 = time.time()
 webpage = str(urllib.request.urlopen(site).read().decode("utf-8"))
 
