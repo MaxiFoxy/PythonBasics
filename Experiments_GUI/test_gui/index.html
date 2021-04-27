@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Создание бирок by @Maxi_Foxy</title>
+        <script type="text/javascript" src="/eel.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+    </head>
+    <body>
+        <script type="text/javascript">
+            /**
+            * Функция Скрывает/Показывает блок
+            * @author ox2.ru дизайн студия
+            **/
+            function showHide(element_id) {
+                //Если элемент с id-шником element_id существует
+                if (document.getElementById(element_id)) {
+                    //Записываем ссылку на элемент в переменную obj
+                    var obj = document.getElementById(element_id);
+                    //Если css-свойство display не block, то:
+                    if (obj.style.display != "block") {
+                        obj.style.display = "block"; //Показываем элемент
+                    }
+                    else obj.style.display = "none"; //Скрываем элемент
+                }
+                //Если элемент с id-шником element_id не найден, то выводим сообщение
+                else alert("Элемент с id: " + element_id + " не найден!");
+            }
+        </script>
+        <center>
+            <button class="btn-grad">Выбрать таблицу</button>
+            <button class="btn-grad">Выбрать папку</button>
+            <button class="btn-grad" onclick="showHide('block_id')">Предпросмотр</button>
+             <div id="block_id" style="display: none;">
+                 <svg style="background: #FFFFFF;" width="200px" height="300px" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="200" y2="0" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="200" y1="0" x2="200" y2="300" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="0" y1="0" x2="0" y2="300" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="0" y1="300" x2="200" y2="300" stroke-width="1" stroke="rgb(0,0,0)"/><text x="15" y="35">Образец не для продажи</text><text x="40" y="60">Б1БР17ПЗ010060</text><line x1="0" y1="125" x2="200" y2="125" stroke-width="1" stroke="rgb(0,0,0)"/><text x="30" y="90">Артикула для заказа</text><text x="60" y="110">(Золото):</text><text x="10" y="150">ЦК: ЦБР10110060</text><text x="10" y="180">БК: ББР10110060</text><line x1="0" y1="200" x2="200" y2="200" stroke-width="1" stroke="rgb(0,0,0)"/><text x="10" y="230">ЦБ: ЦБР10130060</text><text x="10" y="260">ББ: ББР10130060</text></svg>
+             </div>
+            <button class="btn-grad">Создать</button>
+        </center>
+    </body>
+</html>
