@@ -1,3 +1,6 @@
+#
+# не работает, процессе делается
+#
 import os # для получения списка файлов
 import json  # Doc: https://python-scripts.com/json
 
