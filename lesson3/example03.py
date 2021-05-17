@@ -36,7 +36,6 @@ def sum_max_two_values(*value):
     """
     sort = sorted(value)
     sort.reverse()
-    print(sort)
     return int(sort[0]) + int(sort[1])
 
 print(sum_max_two_values(*explode(",",input("Введите числа через запятую: "),3))) #превращает строку в массив с ограничением 3 значения массива, и показывает сумму 2 больших чисел
