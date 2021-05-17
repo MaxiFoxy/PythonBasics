@@ -17,7 +17,7 @@ while True:
         rezerv[i] = 'Ц' + rezerv[i][1:]
         try:
             key = based.index(rezerv[i])
-
+            # можно сократить если всё в массив запихнуть
             ck = red[key]
             bk = red[i]
             cb = white[key]
