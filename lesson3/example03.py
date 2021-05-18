@@ -14,7 +14,7 @@ def explode(separator, string, limit=0):
     except ValueError:
         print("Значение limit должнобыть типа INT")
     while True:
-        if limit <= i:
+        if limit <= i and limit > 0:
             break
         try:
             run.append(string[n:string.index(separator, n)].strip())
@@ -25,7 +25,7 @@ def explode(separator, string, limit=0):
         i+=1
     separator = None
     string = None
-    #limit = None
+    limit = None
     return run
 
 def sum_max_two_values(*value):
