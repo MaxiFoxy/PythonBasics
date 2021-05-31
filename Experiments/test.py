@@ -1,12 +1,15 @@
 import pandas as pd
 import os
 
-filename = r'C:/Users/user/Downloads/test.xlsx'
+filename = r'C:/Users/mlapin/Downloads/test.xlsx'
 df = pd.read_excel(filename)
 based = list(df['based'])
 red = list(df['red'])
 white = list(df['white'])
 rezerv = list(df['based'])
+po = list(df['po'])
+ok = list(df['ok'])
+pz = list(df['pz'])
 i = 0
 while True:
     #(based[i])
@@ -14,12 +17,19 @@ while True:
         rezerv[i] = 'Ц' + rezerv[i][1:]
         try:
             key = based.index(rezerv[i])
-
+            # можно сократить если всё в массив запихнуть
             ck = red[key]
             bk = red[i]
             cb = white[key]
             bb = white[i]
+            cpo = white[key]
+            bpo = white[i]
+            cok = white[key]
+            bok = white[i]
+            cpz = white[key]
+            bpz = white[i]
             print(i, based[i], ck, bk, cb, bb)
+
         except ValueError:
             continue
     elif rezerv[i][0] == 'Ц':
@@ -31,14 +41,20 @@ while True:
             bk = red[key]
             cb = white[i]
             bb = white[key]
+            cpo = white[i]
+            bpo = white[key]
+            cok = white[i]
+            bok = white[key]
+            cpz = white[i]
+            bpz = white[key]
             print(i, based[i], ck, bk, cb, bb)
         except ValueError:
             continue
     else:
         print("не получилось(")
 
-    text = f'<svg width="200px" height="300px" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="200" y2="0" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="200" y1="0" x2="200" y2="300" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="0" y1="0" x2="0" y2="300" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="0" y1="300" x2="200" y2="300" stroke-width="1" stroke="rgb(0,0,0)"/><text x="15" y="35">Образец не для продажи</text><text x="40" y="60">{based[i]}</text><line x1="0" y1="125" x2="200" y2="125" stroke-width="1" stroke="rgb(0,0,0)"/><text x="30" y="90">Артикула для заказа</text><text x="60" y="110">(Золото):</text><text x="10" y="150">ЦК: {ck}</text><text x="10" y="180">БК: {bk}</text><line x1="0" y1="200" x2="200" y2="200" stroke-width="1" stroke="rgb(0,0,0)"/><text x="10" y="230">ЦБ: {cb}</text><text x="10" y="260">ББ: {bb}</text></svg>'.encode('utf-8')
-    file = open(f"C:/Users/user/Downloads/1/{based[i]}.svg", "wb").write(text)
+    text = f'<svg width="300px" height="500px" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="300" y2="0" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="300" y1="0" x2="300" y2="500" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="0" y1="0" x2="0" y2="500" stroke-width="1" stroke="rgb(0,0,0)"/><line x1="0" y1="500" x2="300" y2="500" stroke-width="1" stroke="rgb(0,0,0)"/><text x="50" y="25">Образец не для продажи</text><text x="75" y="50">{based[i]}</text><text x="70" y="75">Артикула для заказа</text><line x1="0" y1="83" x2="500" y2="83" stroke-width="1" stroke="rgb(0,0,0)"/><text x="120" y="100">(Золото):</text><text x="120" y="120">Красное:</text><text x="10" y="140">Ц: {ck}</text><text x="10" y="165">Б: {bk}</text><text x="120" y="185">Белое:</text><text x="10" y="205">Ц: {cb}</text><text x="10" y="225">Б: {bb}</text><line x1="0" y1="235" x2="500" y2="235" stroke-width="1" stroke="rgb(0,0,0)"/><text x="120" y="255">(Серебро):</text><text x="90" y="280">РОДИРОВАНИЕ:</text><text x="10" y="300">Ц: {cpo}</text><text x="10" y="325">Б: {bpo}</text><line x1="0" y1="333" x2="500" y2="333" stroke-width="1" stroke="rgb(0,0,0)"/><text x="80" y="350">ОКСИДИРОВАНИЕ:</text><text x="10" y="370">Ц: {cok}</text><text x="10" y="395">Б: {bok}</text><line x1="0" y1="405" x2="500" y2="405" stroke-width="1" stroke="rgb(0,0,0)"/><text x="120" y="425">Золочение:</text><text x="10" y="445">Ц: {cpz}</text><text x="10" y="470">Б: {bpz}</text></svg>'.encode('utf-8')
+    file = open(f"C:/Users/mlapin/Downloads/1/{based[i]}.svg", "wb").write(text)
 
     i += 1
     if i >= len(based):
