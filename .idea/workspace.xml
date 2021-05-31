@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04fe920c-cda1-4c75-8c31-7667e07236a8" name="Default Changelist" comment="6">
-      <change beforePath="$PROJECT_DIR$/lesson3/example05.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/example05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson4/example01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1r3p1ULc6IBpnLU86T3hHmg0UmV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
