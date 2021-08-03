@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04fe920c-cda1-4c75-8c31-7667e07236a8" name="Default Changelist" comment="+">
-      <change afterPath="$PROJECT_DIR$/lesson5/example07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson5/firm.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson5/thing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson6/example01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson5/example06.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/example06.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
       <recent name="C:\Users\mlapin\PycharmProjects\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.example07">
+  <component name="RunManager" selected="Python.example06">
     <configuration name="example01 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,8 +179,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.example07" />
         <item itemvalue="Python.example06" />
+        <item itemvalue="Python.example07" />
         <item itemvalue="Python.example01 (1)" />
         <item itemvalue="Python.example05" />
         <item itemvalue="Python.example04" />
